@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Service">
+
+
+    <ImageView
+        android:id="@+id/img_sent"
+        android:layout_width="63dp"
+        android:layout_height="53dp"
+        app:layout_constraintBottom_toBottomOf="@+id/edt_sent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edt_sent"
+        app:srcCompat="@android:drawable/ic_menu_send" />
+
+    <EditText
+        android:id="@+id/edt_sent"
+        android:layout_width="304dp"
+        android:layout_height="53dp"
+        android:ems="10"
+        android:hint="Nhập câu hỏi của bạn"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_sent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="411dp"
+        android:layout_height="609dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+
+    <TextView
+        android:id="@+id/tvA1_Booking"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2196F3"
+        android:text="SERVICE"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.001" />
+
+    <ImageButton
+        android:id="@+id/img_exit"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:background="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.002"
+        app:srcCompat="@android:drawable/ic_input_delete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

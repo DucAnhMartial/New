@@ -1,0 +1,164 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".Personal">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="408dp"
+        android:layout_height="234dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.122"
+        app:srcCompat="@drawable/border2" />
+
+    <ImageView
+        android:id="@+id/image_Personal"
+        android:layout_width="92dp"
+        android:layout_height="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107"
+        app:srcCompat="@drawable/ava" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout10"
+        android:layout_width="161dp"
+        android:layout_height="86dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.812"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.237">
+
+        <TextView
+            android:id="@+id/tvName_Personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:textAlignment="viewEnd" />
+
+        <TextView
+            android:id="@+id/tvSDT_Personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/tvCCCD_Personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CCCD"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/tvSoCho_Personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số chỗ đã đặt"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="114dp"
+        android:layout_height="90dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.276"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.238">
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tên"
+            android:textAlignment="viewEnd" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số điện thoại"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CCCD"
+            android:textAlignment="textEnd" />
+
+        <TextView
+            android:id="@+id/tv4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Số chỗ đã đặt"
+            android:textAlignment="textEnd" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvA1_Booking"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#2196F3"
+        android:text="PERSONAL"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="93dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageButton
+        android:id="@+id/img1"
+        android:layout_width="58dp"
+        android:layout_height="49dp"
+        android:background="#2196F3"
+        app:srcCompat="@android:drawable/ic_input_delete"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img"
+        app:layout_constraintVertical_bias="0.336">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_tickets"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"
+            android:orientation="vertical">
+
+
+            <!-- Đây là LinearLayout chứa danh sách các vé, bạn có thể thêm các vé vào đây bằng mã Java -->
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

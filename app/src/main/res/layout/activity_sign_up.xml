@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sign_up"
+    android:background="@drawable/background_dangnhap">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="243dp"
+        android:layout_height="141dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:fontFamily="sans-serif-black"
+        android:text="SMART PARKING"
+        android:textColor="#F13D3D"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    \
+
+
+    <EditText
+        android:id="@+id/edtName_Signup"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Họ và Tên"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <EditText
+        android:id="@+id/edtSDT_Signup"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Số điện thoại"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.437" />
+
+    <EditText
+        android:id="@+id/edtCCCD_Signup"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="CCCD"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502" />
+
+    <EditText
+        android:id="@+id/edtTENDN_Signup"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Tên đăng nhập"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.568" />
+
+    <Button
+        android:id="@+id/btnSignUp_signUp"
+        android:layout_width="186dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="132dp"
+        android:backgroundTint="#FFC107"
+        android:text="Đăng ký"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:strokeColor="#4A3535" />
+
+    <Button
+        android:id="@+id/btnQuayLai_signup"
+        android:layout_width="192dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="60dp"
+        android:backgroundTint="#FFC107"
+        android:text="Quay lại"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/edtMatKhau_Signup"
+        android:layout_width="278dp"
+        android:layout_height="45dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Mật khẩu"
+        android:inputType="numberPassword"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.634" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
